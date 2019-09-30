@@ -131,9 +131,15 @@ table {
 
 body {
   font: 
-  12px/18px, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
-    "Lucida Sans Regular", Geneva, Verdana, sans-serif;
-  line-height: 1;
+   12px/18px,
+   "Lucida Grande", 
+   "Lucida Sans Unicode", 
+   "Lucida Sans",
+   "Lucida Sans Regular", 
+    Geneva, 
+    Verdana, 
+    sans-serif;
+   line-height: 1;
 }
 
 .container {
