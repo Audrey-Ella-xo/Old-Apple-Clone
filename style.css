@@ -130,9 +130,10 @@ table {
 }
 
 body {
-  font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
+  font: 
+  12px/18px, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
     "Lucida Sans Regular", Geneva, Verdana, sans-serif;
-    line-height: 1;
+  line-height: 1;
 }
 
 .container {
@@ -156,46 +157,6 @@ header nav ul,
 
 a {
   text-decoration: none;
-}
-
-footer a {
-  color: #08c;
-}
-
-.copyright > a {
-  padding: 0 10px 0 10px;
-}
-
-/* ===========================================================================
-                             Header styles
- ============================================================================= */
-header {
-  height: 550px;
-  background-image: url(./assets/your_verse_hero.jpg);
-  background-position-y: 100%;
-  background-repeat: no-repeat;
-  color: white;
-}
-
-header nav {
-  width: 980px;
-  height: 35px;
-  background: linear-gradient(
-    to bottom,
-    rgb(134, 134, 134) 5%,
-    rgb(128, 128, 128) 50%,
-    rgb(107, 107, 107) 51%,
-    rgb(99, 99, 99) 8%,
-    rgb(121, 121, 121) 94%
-  );
-  position: absolute;
-  font-size: 14px;
-  top: 75px;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  border-radius: 4px;
-  border: 1px solid rgb(109, 109, 109);
 }
 
 header nav ul {
@@ -234,12 +195,46 @@ header nav ul li:last-child {
   padding: 10px 0 10px 0;
 }
 
+/* ===========================================================================
+                             Header styles
+ ============================================================================= */
+header {
+  height: 550px;
+  background-image: url(./assets/your_verse_hero.jpg);
+  background-position-y: 100%;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+header nav {
+  width: 980px;
+  height: 35px;
+  background: 
+  linear-gradient(
+    to bottom,
+    rgb(134, 134, 134) 5%,
+    rgb(128, 128, 128) 50%,
+    rgb(107, 107, 107) 51%,
+    rgb(99, 99, 99) 8%,
+    rgb(121, 121, 121) 94%
+  );
+  position: absolute;
+  font-size: 14px;
+  top: 75px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 4px;
+  border: 1px solid rgb(109, 109, 109);
+}
+
 input {
   border-radius: 10px;
   border: 1px solid rgb(109, 109, 109);
   margin-right: 5px;
   height: 22px;
-  background: linear-gradient(
+  background:
+  linear-gradient(
     to bottom,
     rgb(134, 134, 134) 5%,
     rgb(128, 128, 128) 50%,
