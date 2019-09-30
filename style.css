@@ -132,9 +132,9 @@ table {
   border-spacing: 0;
 }
 
-.body {
-  margin: 0;
-  padding: 0;
+body {
+  font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
+    "Lucida Sans Regular", Geneva, Verdana, sans-serif;
 }
 
 .container {
@@ -168,7 +168,7 @@ a:hover {
                              Header styles
  ============================================================================= */
 header {
-  height: 600px;
+  height: 550px;
   background-image: url(./assets/your_verse_hero.jpg);
   background-position-y: 100%;
   background-repeat: no-repeat;
@@ -177,34 +177,50 @@ header {
 
 header nav {
   width: 980px;
-    height: 35px;
-    background: linear-gradient( to bottom, rgb(134, 134, 134) 5%, rgb(128, 128, 128) 50%, rgb(107, 107, 107) 51%, rgb(99, 99, 99) 8%, rgb(121, 121, 121) 94% );
-    position: absolute;
-    font-size: 14px;
-    top: 75px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    border-radius: 4px;
-    border: 1px solid rgb(109, 109, 109);
+  height: 35px;
+  background: linear-gradient(
+    to bottom,
+    rgb(134, 134, 134) 5%,
+    rgb(128, 128, 128) 50%,
+    rgb(107, 107, 107) 51%,
+    rgb(99, 99, 99) 8%,
+    rgb(121, 121, 121) 94%
+  );
+  position: absolute;
+  font-size: 14px;
+  top: 75px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 4px;
+  border: 1px solid rgb(109, 109, 109);
 }
 
 header nav ul {
   text-align: middle;
 }
 
-header nav ul a {
+header a {
   color: white;
 }
 
 header nav ul li {
   border-right: 1px solid rgb(109, 109, 109);
   padding: 10px 30px 10px 30px;
+  cursor: pointer;
+}
+
+header nav ul li a:hover {
+  text-decoration: none;
+}
+
+header nav ul li:hover {
+  background: #444444;
 }
 
 .footer-nav li {
   border-right: 1px solid rgb(109, 109, 109);
-  padding: 0 10px 0 10px;
+  padding: 0 5px 0 5px;
 }
 
 header nav ul li:last-child {
@@ -214,49 +230,93 @@ header nav ul li:last-child {
 
 input {
   border-radius: 10px;
-    border: 1px solid rgb(109, 109, 109);
-    margin-right: 5px;
-    height: 22px;
-    background: linear-gradient( to bottom, rgb(134, 134, 134) 5%, rgb(128, 128, 128) 50%, rgb(107, 107, 107) 51%, rgb(99, 99, 99) 8%, rgb(121, 121, 121) 94% );
+  border: 1px solid rgb(109, 109, 109);
+  margin-right: 5px;
+  height: 22px;
+  background: linear-gradient(
+    to bottom,
+    rgb(134, 134, 134) 5%,
+    rgb(128, 128, 128) 50%,
+    rgb(107, 107, 107) 51%,
+    rgb(99, 99, 99) 8%,
+    rgb(121, 121, 121) 94%
+  );
 }
 
 input:focus {
   background: white;
 }
 
-.search { position: relative; }
-.search input { text-indent: 30px; }
-.search .fa-search { 
+.search {
+  position: relative;
+}
+.search input {
+  text-indent: 30px;
+}
+.search .fa-search {
   position: absolute;
   top: 15px;
   left: 7px;
   font-size: 15px;
 }
 
+/* =========================================================================
+                                article styles
+ =========================================================================== */
 header .text {
-  width: 80%;
-  margin: 0 auto;
+  width: 980px;
+  margin: 0 200px;
+  padding: 15px 100px 0 100px;
   position: absolute;
   top: 150px;
-  
+  font-family: 'Roboto', sans-serif;
+}
+
+.text h1 {
+  font-size: 5em;
+  text-align: center;
+}
+
+.text h2 {
+  font-size: 2em;
+  padding: 30px 0;
+  text-align: center;
+  font-weight: 100;
+}
+
+.text p {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 100;
+}
+
+.text1 a:hover,
+.text2 a:hover {
+  text-decoration: none;
 }
 
 /* ===========================================================================
                              aside styles
  ============================================================================= */
 aside ul li img {
-  height: 250px;
-  width: 329px;
-  margin: 5px;
+  height: 200px;
+  width: 334px;
+  margin: 2px;
 }
 
 /* ===========================================================================
                              footer styles
  ============================================================================= */
 footer {
-  font-size: 12px;
+  color: #6e6e6e;
+  font-size: 0.6334em;
+  line-height: 1.2;
   margin: 10px;
-  padding: 0 20px 0 20px;
+  padding: 0 100px 0 100px;
+}
+
+footer a {
+  color: #08c;
 }
 
 #shop {
@@ -285,7 +345,7 @@ footer {
   float: left;
   clear: both;
   width: 100%;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .copyright > a {
