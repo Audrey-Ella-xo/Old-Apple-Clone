@@ -147,8 +147,8 @@ table {
 /* ===========================================================================
                              list styles
  ============================================================================= */
- aside ul,
- header nav ul,
+aside ul,
+header nav ul,
 .footer-nav {
   display: flex;
   list-style: none;
@@ -183,6 +183,11 @@ header nav {
 
 header nav ul {
   border: 1px solid black;
+}
+
+.footer-nav li {
+  border-right: 1px solid black;
+  padding: 0 10px 0 10px;
 }
 
 header nav ul li {
@@ -226,11 +231,6 @@ footer {
   width: 51%;
   padding-top: 0;
   text-align: right;
-}
-
-.footer-nav li {
-  border-right: 1px solid black;
-  padding: 0 10px 0 10px;
 }
 
 .footer-nav li:last-child {
