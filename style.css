@@ -185,14 +185,14 @@ header nav ul {
   border: 1px solid black;
 }
 
-.footer-nav li {
-  border-right: 1px solid black;
-  padding: 0 10px 0 10px;
-}
-
 header nav ul li {
   border-right: 1px solid black;
   padding: 10px 30px 10px 30px;
+}
+
+.footer-nav li {
+  border-right: 1px solid black;
+  padding: 0 10px 0 10px;
 }
 
 header nav ul li:last-child {
