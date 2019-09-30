@@ -51,6 +51,36 @@ table {
     padding: 0;
 }
 
+.container {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  overflow: hidden;
+}
+
+/*===========================================================================
+                             list styles
+=============================================================================*/
+header nav ul,
+aside ul,
+.footer-nav {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*===========================================================================
+                             Header styles
+=============================================================================*/
 header {
     height: 600px;
     background-image: url(./assets/your_verse_hero.jpg);
@@ -58,7 +88,82 @@ header {
     background-repeat: no-repeat;
 }
 
-aside ul {
-    display: flex;
-    list-style: none;
+header nav {
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+  padding: 100px;
 }
+
+header nav ul {
+  border: 1px solid black;
+}
+
+header nav ul li {
+  border-right: 1px solid black;
+  padding: 10px 30px 10px 30px;
+}
+
+header nav ul li:last-child {
+  border: 0;
+  padding: 10px 0 10px 0;
+}
+/*===========================================================================
+                             aside styles
+=============================================================================*/
+aside ul li img {
+  height: 250px;
+  width: 329px;
+  margin: 5px;
+}
+
+/*===========================================================================
+                             footer styles
+=============================================================================*/
+footer {
+  font-size: 12px;
+  margin: 10px;
+  padding: 0 20px 0 20px;
+}
+
+#shop {
+  float: left;
+    clear: both;
+    width: 49%;
+    padding-top: 0;
+    text-align: left;
+}
+.footer-nav{
+  float: right;
+  width: 51%;
+  padding-top: 0;
+  text-align: right;
+}
+
+.footer-nav li {
+  border-right: 1px solid black;
+  padding: 0px 10px 0px 10px;
+}
+
+.footer-nav li:last-child {
+  border-right: none;
+}
+
+.copyright {
+    display: flex;
+    top: 0;
+    right: 0;
+    float: left;
+    clear: both;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.copyright > a {
+  padding:0 10px 0 10px;
+}
+
+.copyright > a:first-of-type {
+  border-right: 1px solid black;
+}
+
