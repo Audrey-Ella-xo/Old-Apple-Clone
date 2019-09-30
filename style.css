@@ -130,8 +130,15 @@ table {
 }
 
 body {
-  font: 12px/18px, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
-    "Lucida Sans Regular", Geneva, Verdana, sans-serif;
+  font: 
+  12px/18px, 
+  "Lucida Grande", 
+  "Lucida Sans Unicode", 
+  "Lucida Sans",
+    "Lucida Sans Regular", 
+    Geneva, 
+    Verdana, 
+    ans-serif;
   line-height: 1;
 }
 
@@ -166,22 +173,10 @@ header a {
   color: white;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 header nav ul li {
   border-right: 1px solid rgb(109, 109, 109);
   padding: 10px 30px 10px 30px;
   cursor: pointer;
-}
-
-header nav ul li a:hover {
-  text-decoration: none;
-}
-
-header nav ul li:hover {
-  background: #444;
 }
 
 .footer-nav li {
@@ -192,6 +187,18 @@ header nav ul li:hover {
 header nav ul li:last-child {
   border: 0;
   padding: 10px 0 10px 0;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header nav ul li a:hover {
+  text-decoration: none;
+}
+
+header nav ul li:hover {
+  background: #444;
 }
 
 /* ===========================================================================
@@ -208,7 +215,8 @@ header {
 header nav {
   width: 980px;
   height: 35px;
-  background: linear-gradient(
+  background: 
+  linear-gradient(
     to bottom,
     rgb(134, 134, 134) 5%,
     rgb(128, 128, 128) 50%,
@@ -231,7 +239,8 @@ input {
   border: 1px solid rgb(109, 109, 109);
   margin-right: 5px;
   height: 22px;
-  background: linear-gradient(
+  background: 
+  linear-gradient(
     to bottom,
     rgb(134, 134, 134) 5%,
     rgb(128, 128, 128) 50%,
