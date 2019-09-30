@@ -172,32 +172,73 @@ header {
   background-image: url(./assets/your_verse_hero.jpg);
   background-position-y: 100%;
   background-repeat: no-repeat;
+  color: white;
 }
 
 header nav {
-  display: flex;
-  margin: 0 auto;
-  width: 80%;
-  padding: 100px;
+  width: 980px;
+    height: 35px;
+    background: linear-gradient( to bottom, rgb(134, 134, 134) 5%, rgb(128, 128, 128) 50%, rgb(107, 107, 107) 51%, rgb(99, 99, 99) 8%, rgb(121, 121, 121) 94% );
+    position: absolute;
+    font-size: 14px;
+    top: 75px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 4px;
+    border: 1px solid rgb(109, 109, 109);
 }
 
 header nav ul {
-  border: 1px solid black;
+  text-align: middle;
+}
+
+header nav ul a {
+  color: white;
 }
 
 header nav ul li {
-  border-right: 1px solid black;
+  border-right: 1px solid rgb(109, 109, 109);
   padding: 10px 30px 10px 30px;
 }
 
 .footer-nav li {
-  border-right: 1px solid black;
+  border-right: 1px solid rgb(109, 109, 109);
   padding: 0 10px 0 10px;
 }
 
 header nav ul li:last-child {
   border: 0;
   padding: 10px 0 10px 0;
+}
+
+input {
+  border-radius: 10px;
+    border: 1px solid rgb(109, 109, 109);
+    margin-right: 5px;
+    height: 22px;
+    background: linear-gradient( to bottom, rgb(134, 134, 134) 5%, rgb(128, 128, 128) 50%, rgb(107, 107, 107) 51%, rgb(99, 99, 99) 8%, rgb(121, 121, 121) 94% );
+}
+
+input:focus {
+  background: white;
+}
+
+.search { position: relative; }
+.search input { text-indent: 30px; }
+.search .fa-search { 
+  position: absolute;
+  top: 15px;
+  left: 7px;
+  font-size: 15px;
+}
+
+header .text {
+  width: 80%;
+  margin: 0 auto;
+  position: absolute;
+  top: 150px;
+  
 }
 
 /* ===========================================================================
@@ -252,5 +293,5 @@ footer {
 }
 
 .copyright > a:first-of-type {
-  border-right: 1px solid black;
+  border-right: 1px solid rgb(109, 109, 109);
 }
