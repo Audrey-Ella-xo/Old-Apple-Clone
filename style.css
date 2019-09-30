@@ -2,19 +2,87 @@
   License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -23,42 +91,166 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
   list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
   quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
 .body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
+.container {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* ===========================================================================
+                             list styles
+ ============================================================================= */
+aside ul,
+header nav ul,
+.footer-nav {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===========================================================================
+                             Header styles
+ ============================================================================= */
 header {
-    height: 600px;
-    background-image: url(./assets/your_verse_hero.jpg);
-    background-position-y: 100%;
-    background-repeat: no-repeat;
+  height: 600px;
+  background-image: url(./assets/your_verse_hero.jpg);
+  background-position-y: 100%;
+  background-repeat: no-repeat;
 }
 
-aside ul {
-    display: flex;
-    list-style: none;
+header nav {
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+  padding: 100px;
+}
+
+header nav ul {
+  border: 1px solid black;
+}
+
+header nav ul li {
+  border-right: 1px solid black;
+  padding: 10px 30px 10px 30px;
+}
+
+.footer-nav li {
+  border-right: 1px solid black;
+  padding: 0 10px 0 10px;
+}
+
+header nav ul li:last-child {
+  border: 0;
+  padding: 10px 0 10px 0;
+}
+
+/* ===========================================================================
+                             aside styles
+ ============================================================================= */
+aside ul li img {
+  height: 250px;
+  width: 329px;
+  margin: 5px;
+}
+
+/* ===========================================================================
+                             footer styles
+ ============================================================================= */
+footer {
+  font-size: 12px;
+  margin: 10px;
+  padding: 0 20px 0 20px;
+}
+
+#shop {
+  float: left;
+  clear: both;
+  width: 49%;
+  padding-top: 0;
+  text-align: left;
+}
+
+.footer-nav {
+  float: right;
+  width: 51%;
+  padding-top: 0;
+  text-align: right;
+}
+
+.footer-nav li:last-child {
+  border-right: none;
+}
+
+.copyright {
+  display: flex;
+  top: 0;
+  right: 0;
+  float: left;
+  clear: both;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.copyright > a {
+  padding: 0 10px 0 10px;
+}
+
+.copyright > a:first-of-type {
+  border-right: 1px solid black;
 }
