@@ -86,10 +86,11 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
+  font-size: 100%;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -160,10 +161,6 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
 /* ===========================================================================
                              Header styles
  ============================================================================= */
@@ -204,6 +201,10 @@ header a {
   color: white;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 header nav ul li {
   border-right: 1px solid rgb(109, 109, 109);
   padding: 10px 30px 10px 30px;
@@ -215,12 +216,12 @@ header nav ul li a:hover {
 }
 
 header nav ul li:hover {
-  background: #444444;
+  background: #444;
 }
 
 .footer-nav li {
   border-right: 1px solid rgb(109, 109, 109);
-  padding: 0 5px 0 5px;
+  padding: 0 15px 0 15px;
 }
 
 header nav ul li:last-child {
@@ -250,9 +251,11 @@ input:focus {
 .search {
   position: relative;
 }
+
 .search input {
   text-indent: 30px;
 }
+
 .search .fa-search {
   position: absolute;
   top: 15px;
@@ -269,7 +272,7 @@ header .text {
   padding: 15px 100px 0 100px;
   position: absolute;
   top: 150px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .text h1 {
