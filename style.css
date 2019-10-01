@@ -130,8 +130,7 @@ table {
 }
 
 body {
-  font: 12px/18px, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
-    "Lucida Sans Regular", Geneva, Verdana, ans-serif;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Lucida Sans Regular", Geneva, Verdana, sans-serif;
   line-height: 1;
 }
 
@@ -208,14 +207,7 @@ header {
 header nav {
   width: 980px;
   height: 35px;
-  background: linear-gradient(
-    to bottom,
-    rgb(134, 134, 134) 5%,
-    rgb(128, 128, 128) 50%,
-    rgb(107, 107, 107) 51%,
-    rgb(99, 99, 99) 8%,
-    rgb(121, 121, 121) 94%
-  );
+  background: linear-gradient(to bottom, rgb(134, 134, 134) 5%, rgb(128, 128, 128) 50%, rgb(107, 107, 107) 51%, rgb(99, 99, 99) 8%, rgb(121, 121, 121) 94%);
   position: absolute;
   font-size: 14px;
   top: 75px;
@@ -231,14 +223,7 @@ input {
   border: 1px solid rgb(109, 109, 109);
   margin-right: 5px;
   height: 22px;
-  background: linear-gradient(
-    to bottom,
-    rgb(134, 134, 134) 5%,
-    rgb(128, 128, 128) 50%,
-    rgb(107, 107, 107) 51%,
-    rgb(99, 99, 99) 8%,
-    rgb(121, 121, 121) 94%
-  );
+  background: linear-gradient(to bottom, rgb(134, 134, 134) 5%, rgb(128, 128, 128) 50%, rgb(107, 107, 107) 51%, rgb(99, 99, 99) 8%, rgb(121, 121, 121) 94%);
 }
 
 input:focus {
