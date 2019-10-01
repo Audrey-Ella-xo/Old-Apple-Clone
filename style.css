@@ -1,0 +1,334 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Lucida Sans Regular", Geneva, Verdana, sans-serif;
+  line-height: 1;
+}
+
+.container {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* ===========================================================================
+                             list styles
+ ============================================================================= */
+aside ul,
+header nav ul,
+.footer-nav {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+header nav ul {
+  text-align: middle;
+}
+
+header a {
+  color: white;
+}
+
+header nav ul li {
+  border-right: 1px solid rgb(109, 109, 109);
+  padding: 10px 30px 10px 30px;
+  cursor: pointer;
+}
+
+.footer-nav li {
+  border-right: 1px solid rgb(109, 109, 109);
+  padding: 0 15px 0 15px;
+}
+
+header nav ul li:last-child {
+  border: 0;
+  padding: 10px 0 10px 0;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header nav ul li a:hover {
+  text-decoration: none;
+}
+
+header nav ul li:hover {
+  background: #444;
+}
+
+/* ===========================================================================
+                             Header styles
+ ============================================================================= */
+header {
+  height: 550px;
+  background-image: url(./assets/your_verse_hero.jpg);
+  background-position-y: 100%;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+header nav {
+  width: 980px;
+  height: 35px;
+  background: linear-gradient(to bottom, rgb(134, 134, 134) 5%, rgb(128, 128, 128) 50%, rgb(107, 107, 107) 51%, rgb(99, 99, 99) 8%, rgb(121, 121, 121) 94%);
+  position: absolute;
+  font-size: 14px;
+  top: 75px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 4px;
+  border: 1px solid rgb(109, 109, 109);
+}
+
+input {
+  border-radius: 10px;
+  border: 1px solid rgb(109, 109, 109);
+  margin-right: 5px;
+  height: 22px;
+  background: linear-gradient(to bottom, rgb(134, 134, 134) 5%, rgb(128, 128, 128) 50%, rgb(107, 107, 107) 51%, rgb(99, 99, 99) 8%, rgb(121, 121, 121) 94%);
+}
+
+input:focus {
+  background: white;
+}
+
+.search {
+  position: relative;
+}
+
+.search input {
+  text-indent: 30px;
+}
+
+.search .fa-search {
+  position: absolute;
+  top: 15px;
+  left: 7px;
+  font-size: 15px;
+}
+
+/* =========================================================================
+                                article styles
+ =========================================================================== */
+header .text {
+  width: 980px;
+  margin: 0 200px;
+  padding: 15px 100px 0 100px;
+  position: absolute;
+  top: 150px;
+  font-family: "Roboto", sans-serif;
+}
+
+.text h1 {
+  font-size: 5em;
+  text-align: center;
+}
+
+.text h2 {
+  font-size: 2em;
+  padding: 30px 0;
+  text-align: center;
+  font-weight: 100;
+}
+
+.text p {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 100;
+}
+
+.text1 a:hover,
+.text2 a:hover {
+  text-decoration: none;
+}
+
+/* ===========================================================================
+                             aside styles
+ ============================================================================= */
+aside ul li img {
+  height: 200px;
+  width: 334px;
+  margin: 2px;
+}
+
+/* ===========================================================================
+                             footer styles
+ ============================================================================= */
+footer {
+  color: #6e6e6e;
+  font-size: 0.6334em;
+  line-height: 1.2;
+  margin: 10px;
+  padding: 0 100px 0 100px;
+}
+
+#shop {
+  float: left;
+  clear: both;
+  width: 49%;
+  padding-top: 0;
+  text-align: left;
+}
+
+.footer-nav {
+  float: right;
+  width: 51%;
+  padding-top: 0;
+  text-align: right;
+}
+
+.footer-nav li:last-child {
+  border-right: none;
+}
+
+.copyright {
+  display: flex;
+  top: 0;
+  right: 0;
+  float: left;
+  clear: both;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.copyright > a:first-of-type {
+  border-right: 1px solid rgb(109, 109, 109);
+}
